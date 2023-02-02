@@ -81,7 +81,9 @@ section {
     right: 10%;
     gap: 10px;
     transform: scale(0);
+    cursor: pointer;
 }
+
 .card:hover > .ionic {
     transform: scale(1);
 }
@@ -91,6 +93,8 @@ section {
     border-radius: 50%;
     font-size: 24px;
     cursor: pointer;
+    padding: 5px;
+    background-color: rgba(0, 0, 0,.5);
 }
 
 .card .tags {
