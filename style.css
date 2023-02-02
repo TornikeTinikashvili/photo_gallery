@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #F55050;
+}
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 10px;
+}
+.img {
+    background-color: rgb(56, 55, 55);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+#follow {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #F55050;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+    margin:  30px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-inline: 10%;
+}
+.galSort {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-inline: 10%;
+    gap: 20px;
+}
+.sortBy{
+    position: absolute;
+    right: 0;
+}
+.card {
+    position: relative;
+}
+.cardContent {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    flex: 1 1 calc(20% - 50px);
+    min-width: 250px;
+    max-width: 260px;
+    height: 350px;
+    background-color: rgb(196, 195, 195);
+    border-radius: 20px;
+    margin: 20px 20px;
+}
+.card .ionic {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 7%;
+    right: 10%;
+    gap: 10px;
+    transform: scale(0);
+}
+.card:hover > .ionic {
+    transform: scale(1);
+}
+
+.card .ionic ion-icon {
+    color: #F55050;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.card .tags {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(88, 88, 88,.5);
+    bottom: 0;
+}
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #F55050;
+    margin-top: 30px;
+}
