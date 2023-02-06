@@ -9,22 +9,29 @@
 </head>
 <body>
     <?php 
+        echo "<section class="."gallerySect".">";
+        echo "<div class="."gallery".">";
         $i=0;
         while(isset($datas[$i+1])){
-            // echo 
-            // "<tr>
-            // <td>".$datas[$i]."</td>
-            // <td>".$datas[$i+1]."</td>
-            // </tr>";
-            // $i+=2;
-            //------------------------------
-            echo "<div class=card".">";
-            echo "<img src=".$datas[$i]."alt=".">";
-            echo "<h1>".$datas[$i+1]."</h1>";
-            echo "</div>";
+                echo "<div class="."card".">";
+                    echo "<div class="."cardContent".">";
+                        echo "<img src=".$datas[$i]."alt=".">";
+                        echo "<div class="."tags".">";
+                            echo "<ul>";
+                                echo "<li><a href=".">".$datas[$i+1]."</a></li>";
+                                echo "<li><a href=".">".$datas[$i+1]."</a></li>";
+                                echo "<li><a href=".">".$datas[$i+1]."</a></li>";
+                                echo "<li><a href=".">".$datas[$i+1]."</a></li>";
+                                echo "<li><a href=".">".$datas[$i+1]."</a></li>";
+                            echo "</ul>";
+                        echo "</div>";
+                    echo "</div>";
+                echo "</div>";
             $i+=2;
-            //------------------------------------
         }
+        echo "</div>";
+        echo "</section>";
         ?>
+        <script src="js.js"></script>
 </body>
 </html>

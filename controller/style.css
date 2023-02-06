@@ -17,11 +17,7 @@ header {
 //  ██████  ██████  ██    ██ █████   ██ ██      █████   
 //  ██      ██   ██ ██    ██ ██      ██ ██      ██      
 //  ██      ██   ██  ██████  ██      ██ ███████ ███████  
-*/                                                    
-img {
-    width: 100px;
-    height: 100px;
-}                                           
+*/                                                                                             
 .user {
     display: flex;
     flex-direction: column;
