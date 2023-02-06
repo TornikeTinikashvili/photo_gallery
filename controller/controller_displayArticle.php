@@ -7,8 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="profile.html">profile page</a>
-    <a href="gallery.html">gallery page</a>
-
+<?php 
+include('../model/connect.php');
+include('../model/model_displayArticle.php');
+include('../vue/vue_displayArticle.php');
+?>
 </body>
 </html>
